@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="facebook_app_id">398437551318502</string>
+    <string name="fb_login_protocol_scheme">fb398437551318502</string>
+    <string name="api_key">6b52ffc57d0b48f1bc7df54cb611daa2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
