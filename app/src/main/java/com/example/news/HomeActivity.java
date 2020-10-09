@@ -74,7 +74,11 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
 
                     @Override
                     public CharSequence getPageTitle(int position) {
-                        return "tab " + position;
+                        if(articleSorted.get(position).size() != 0) {
+                           return  articleSorted.get(position).get(0).getSource().getName();
+                        }else {
+                            return "";
+                        }
                     }
 
                     @Override
@@ -147,6 +151,7 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
             ArrayList<Article> articleArrayList = articles.get(sourceName);
             if(articleArrayList == null){
                 articleArrayList = new ArrayList<>();
+                articleArrayList.add(article);
             }else {
                 articleArrayList.add(article);
             }
