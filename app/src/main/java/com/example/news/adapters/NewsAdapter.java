@@ -68,7 +68,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         });
 
         Glide.with(context)
-                .load(Uri.parse(articles.get(position).getUrlToImage()))
+                .load(articles.get(position).getUrlToImage())
                 .into(holder.imageView);
     }
 
